@@ -55,7 +55,7 @@ const Bio = () => {
         }}
       />
       <p>
-        Written by <strong>{author}</strong>, who is currently splitting time between Sydney and Bangkok
+        Written by <strong>{author}</strong>, who currently splits his time between Sydney and Bangkok
         building software for enterprise businesses.
         {` `}
         <a href={`https://twitter.com/${social.twitter}`}>

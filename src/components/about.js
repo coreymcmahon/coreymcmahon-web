@@ -2,12 +2,13 @@ import React from "react"
 
 const About = () => {
   const linksHtml = [
-    { href: "https://www.twitter.com/corey_mcmahon", innerHtml: "Twitter" },
     { href: "https://www.github.com/coreymcmahon", innerHtml: "GitHub" },
     { href: "https://www.instagram.com/coreyjmcmahon", innerHtml: "Instagram" },
+    { href: "https://www.linkedin.com/in/coreyjmcmahon", innerHtml: "LinkedIn" },
+    { href: "https://www.twitter.com/corey_mcmahon", innerHtml: "Twitter" },
   ].map((l) => (
-    <li style={{ display: `inline`, padding: `0`, margin: `0`, marginLeft: (l.innerHtml !== `Twitter` ? `2.5rem` : `0`) }}>
-      <a href={ l.href } style={{ textDecoration: `none`, color: `#222`, fontWeight: `700`}}>
+    <li style={{ display: `inline`, padding: `0`, margin: `0`, marginLeft: (l.innerHtml !== `GitHub` ? `2.5rem` : `0`) }}>
+      <a href={ l.href } style={{ textDecoration: `none`, color: `#222`, fontWeight: `700`}} target="_blank">
         { l.innerHtml }
       </a>
     </li>
@@ -15,12 +16,13 @@ const About = () => {
 
   return (
     <section>
-      <h1>CTO, Founder.</h1>
+      <h2>CTO, Founder.</h2>
       <p>
-        Hey, I'm Corey.
+        Hi, I'm Corey.
       </p>
       <p>
-        I'm an Australian CTO, engineering manager and senior software developer working to build enterprise Software as a Service products.
+        I'm an Australian CTO, engineering manager and senior software engineer 
+        currently building industry leading ecommerce systems for enterprise brands.
       </p>
       <p>
         <ul class="social-links"

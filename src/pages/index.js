@@ -13,6 +13,7 @@ class BlogIndex extends React.Component {
     const siteTitle = data.site.siteMetadata.title
     const posts = data.allMarkdownRemark.edges
 
+    // @todo: put this back when blog posts are posted
     // const postsHtml = (
     //   posts.map(({ node }) => {
     //     const title = node.frontmatter.title || node.fields.slug
